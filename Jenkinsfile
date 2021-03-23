@@ -1,11 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('Install') {
-      steps { sh 'npm install' }
+    stage('Clean Directory') {
+      steps { echo 'rm -rf node_modules' }
     }
 
-    stage('Test') {
+     stage('Install') {
+      steps { echo 'npm install' }
+    }
+
+    stage('Build') {
       parallel {
         stage('Building NG APP') {
             steps { echo 'npm build' }
