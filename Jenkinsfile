@@ -9,10 +9,8 @@ pipeline {
       steps { echo 'npm install' }
     }
 
-    stage('Build') {
-        stage('Building NG APP') {
+    stage('Building NG APP') {
             steps { echo 'npm build' }
-        }
     }
 
   }
