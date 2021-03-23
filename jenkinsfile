@@ -8,16 +8,16 @@ pipeline {
     stage('Test') {
       parallel {
         stage('Static code analysis') {
-            steps { sh 'npm run-script lint' }
+            steps { echo 'nothing !!' }
         }
         stage('Unit tests') {
-            steps { sh 'npm run-script test' }
+            steps { echo 'Unit Test nothing !!' }
         }
       }
     }
 
     stage('Build') {
-      steps { sh 'npm run-script build' }
+      steps { echo 'Build Test nothing !!' }
     }
   }
 }
