@@ -2,7 +2,7 @@ pipeline {
   agent any
   stages {
     stage('Clean Directory') {
-      steps { echo 'rm -rf node_modules' }
+      steps { echo 'rm -rf node_modules ' }
     }
 
      stage('Install') {
