@@ -1,0 +1,23 @@
+pipeline {
+  agent any
+  stages {
+    stage('Install') {
+      steps { sh 'npm install' }
+    }
+
+    stage('Test') {
+      parallel {
+        stage('Static code analysis') {
+            steps { echo 'nothing !!' }
+        }
+        stage('Unit tests') {
+            steps { echo 'Unit Test nothing !!' }
+        }
+      }
+    }
+
+    stage('Build') {
+      steps { echo 'Build Test nothing !!' }
+    }
+  }
+}
