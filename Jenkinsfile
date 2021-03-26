@@ -5,12 +5,14 @@ pipeline {
       steps { sh 'rm -rf node_modules  ' }
     }
 
-     stage('Install') {
+     stage('Npm Install') {
       steps { sh 'npm install' }
     }
 
     stage('Building Node') {
-            steps { sh 'npm start' }
+            steps { sh "echo 'starting Node'" }
+            steps { sh "echo 'npm start'" }
+            steps { sh "echo 'Node strated Successful'" }
     }
 
   }
