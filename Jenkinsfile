@@ -9,10 +9,8 @@ pipeline {
       steps { sh 'npm install' }
     }
 
-    stage('Building Node') {
-            steps { sh "echo 'starting Node'" }
+    stage('Building Node') {             
             steps { sh "echo 'npm start'" }
-            steps { sh "echo 'Node strated Successful'" }
     }
 
      stage('Test Stage') {
