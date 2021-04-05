@@ -8,11 +8,7 @@ pipeline {
     stage('Npm Install') {
       steps { sh 'npm install' }
     }
-
-    stage('Building Node') {             
-            steps { sh "echo 'npm start'" }
-    }
-
+    
     stage('Building Node') {
             steps { sh "echo 'starting Node'" }
             steps { sh "echo 'npm start'" }
