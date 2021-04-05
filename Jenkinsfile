@@ -5,7 +5,7 @@ pipeline {
       steps { sh 'rm -rf node_modules  ' }
     }
 
-     stage('Npm Install') {
+    stage('Npm Install') {
       steps { sh 'npm install' }
     }
 
