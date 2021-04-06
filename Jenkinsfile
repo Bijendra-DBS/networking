@@ -10,7 +10,7 @@ pipeline {
     }
 
     stage('Building Node') {             
-            steps { sh "echo 'npm start '"}             
+            steps { sh "echo 'npm start'"}             
     }
 
      stage('Test Stage') {
