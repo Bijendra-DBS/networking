@@ -13,12 +13,12 @@ pipeline {
             steps { sh "echo 'npm start'"}             
     }
 
-     stage('Test Stage') {
+     stage('Testing Stage') {
       steps { sh "echo 'Test Node Sucessful'" }
     }
 
      stage('Deployment Stage') {
-      steps { sh "echo ' Node Depoloyed To Production Sucessful'" }
+      steps { sh "echo ' Node Build Succeed and Deployed'" }
     }
 
 
